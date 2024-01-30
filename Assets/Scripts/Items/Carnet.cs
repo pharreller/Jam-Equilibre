@@ -11,7 +11,7 @@ public class Carnet : MonoBehaviour
     public Image leftPage;
     public Image rightPage;
     public Sprite[] pagesArray;
-    private bool carnetIsVisible = false;
+    public bool carnetIsVisible = false;
     private int rightPageVisible = 1;
 
     private void Update()
@@ -51,7 +51,7 @@ public class Carnet : MonoBehaviour
         }
     }
     
-    void ToggleShowCarnet()
+    public void ToggleShowCarnet()
     {
         if (carnetIsVisible)
         {

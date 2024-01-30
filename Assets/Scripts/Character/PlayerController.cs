@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     [Header("Camera Settings")]
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
     [SerializeField] [Range(0.1f, 5f)] float mouseSensitivity;
-    bool cursorLock = true;
     [Range(0, 90)] public int cameraCapValue;
     Vector2 currentMouseDelta;
     Vector2 currentMouseDeltaVelocity;
@@ -33,11 +32,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        if (cursorLock)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
-        }
     }
 
     void Update()
