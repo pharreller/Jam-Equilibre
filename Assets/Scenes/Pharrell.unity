@@ -362,6 +362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8711153144246299639, guid: 2d6d395116f4eba41a933520fde4cda2,
         type: 3}
+      propertyPath: cameraCapUp
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8711153144246299639, guid: 2d6d395116f4eba41a933520fde4cda2,
+        type: 3}
       propertyPath: cameraCapMax
       value: 45
       objectReference: {fileID: 0}
@@ -369,6 +374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: cameraCapMin
       value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8711153144246299639, guid: 2d6d395116f4eba41a933520fde4cda2,
+        type: 3}
+      propertyPath: cameraCapDown
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8711153144246299639, guid: 2d6d395116f4eba41a933520fde4cda2,
         type: 3}

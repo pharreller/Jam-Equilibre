@@ -13,8 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
     [SerializeField] [Range(0.1f, 5f)] float mouseSensitivity;
     bool cursorLock = true;
-    [Range(0, 90)] public int cameraCapUp;
-    [Range(0, 90)] public int cameraCapDown;
+    [Range(0, 90)] public int cameraCapValue;
     
     [Header("Player Settings")]
     [SerializeField] [Range(0.0f, 20f)] float Speed = 6.0f;
@@ -60,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
         cameraCap -= currentMouseDelta.y * mouseSensitivity;
 
-        cameraCap = Mathf.Clamp(cameraCap, cameraCapDown, cameraCapUp);
+        cameraCap = Mathf.Clamp(cameraCap, -cameraCapValue, cameraCapValue);
 
         playerCamera.localEulerAngles = Vector3.right * cameraCap;
 
