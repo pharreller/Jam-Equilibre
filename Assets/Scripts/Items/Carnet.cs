@@ -2,15 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Carnet : MonoBehaviour
 {
-    public SpriteRenderer coverRenderer;
-    public SpriteRenderer leftPageRenderer;
-    public SpriteRenderer rightPageRenderer;
+    public Image cover;
+    public Image attach;
+    public Image leftPage;
+    public Image rightPage;
     public Sprite[] pagesArray;
     private bool carnetIsVisible = false;
-    private int leftPageVisible = 0;
+    private int rightPageVisible = 1;
 
     private void Update()
     {
@@ -23,9 +25,9 @@ public class Carnet : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                if (leftPageVisible > 0)
+                if (rightPageVisible > 1)
                 {
-                    leftPageVisible -= 1;
+                    rightPageVisible -= 2;
                 }
                 else
                 {
@@ -36,9 +38,9 @@ public class Carnet : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                if (leftPageVisible < 3)
+                if (rightPageVisible < 7)
                 {
-                    leftPageVisible += 1;
+                    rightPageVisible += 2;
                 }
                 else
                 {
@@ -54,24 +56,42 @@ public class Carnet : MonoBehaviour
         if (carnetIsVisible)
         {
             carnetIsVisible = false;
-            coverRenderer.enabled = false;
-            leftPageRenderer.enabled = false;
-            rightPageRenderer.enabled = false;
+            cover.enabled = false;
+            attach.enabled = false;
+            leftPage.enabled = false;
+            rightPage.enabled = false;
         }
         else
         { 
             carnetIsVisible = true;
-            coverRenderer.enabled = true;
-            leftPageRenderer.enabled = true;
-            rightPageRenderer.enabled = true;
+            attach.enabled = true;
+            cover.enabled = true;
+            TurnPage();
         }
     }
 
     void TurnPage()
     {
-        leftPageRenderer.sprite = pagesArray[leftPageVisible];
-        rightPageRenderer.sprite = pagesArray[leftPageVisible+1];
+        //Debug.Log(rightPageVisible);
+        if (rightPageVisible == 1)
+        {
+            attach.enabled = true;
+            leftPage.enabled=false;
+        }
+        else
+        {
+            leftPage.enabled=true;
+            leftPage.sprite = pagesArray[rightPageVisible-1];
+        }
+        if (rightPageVisible == 7)
+        {
+            attach.enabled = true;
+            rightPage.enabled=false;
+        }
+        else
+        {
+            rightPage.enabled=true;
+            rightPage.sprite = pagesArray[rightPageVisible];
+        }
     }
-    
-    
 }
