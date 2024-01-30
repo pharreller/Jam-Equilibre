@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c78ebd61842a7468c6b236cdad65cd
+guid: 4c92985b2b4949b42b4951c9e7e6d346
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: page gauche_0
+      name: double page 3_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 15
-        width: 838
-        height: 1003
+        x: 1030
+        y: 118
+        width: 704
+        height: 875
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 68, z: 0, w: 22}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e276bf13fc884c419f91fd2d2b973fa
-      internalID: -964079963
+      spriteID: 9158718ef1d715f45958d31b0357f5ae
+      internalID: -594506901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: double page 3_4
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 94
+        width: 699
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1000948c275a440982ec2047586589
+      internalID: -2089622034
       vertices: []
       indices: 
       edges: []
@@ -133,7 +154,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5a3e84b90129d8744a0e55891768c251
+    spriteID: fd82c5265b8009c419b6050581e5cb0f
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +162,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      page gauche_0: -964079963
+      double page 3_0: -594506901
+      double page 3_1: 2027265765
+      double page 3_10: -2113509027
+      double page 3_11: -3584389
+      double page 3_12: -1231345687
+      double page 3_13: 1245942704
+      double page 3_2: -1537151598
+      double page 3_3: 354583754
+      double page 3_4: -2089622034
+      double page 3_5: 1087489068
+      double page 3_6: 1924698898
+      double page 3_7: -1168210506
+      double page 3_8: 334958523
+      double page 3_9: -126172241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

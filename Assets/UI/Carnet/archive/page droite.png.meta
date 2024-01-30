@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c78ebd61842a7468c6b236cdad65cd
+guid: 05a90a5472b647e45a43ffa25ada457d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,40 +108,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: page gauche_0
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 15
-        width: 838
-        height: 1003
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 68, z: 0, w: 22}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e276bf13fc884c419f91fd2d2b973fa
-      internalID: -964079963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5a3e84b90129d8744a0e55891768c251
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      page gauche_0: -964079963
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

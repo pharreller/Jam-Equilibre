@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c78ebd61842a7468c6b236cdad65cd
+guid: c22d586283ecd8f4fac01f9eba12712d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: page gauche_0
+      name: double page 2_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 15
-        width: 838
-        height: 1003
+        x: 222
+        y: 94
+        width: 733
+        height: 876
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 68, z: 0, w: 22}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e276bf13fc884c419f91fd2d2b973fa
-      internalID: -964079963
+      spriteID: 3428cd15ca6b22448ac17eae7a5a7964
+      internalID: 1384450204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: double page 2_1
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 346
+        width: 8
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc37f6f6f8482064d9f28661319b8ab5
+      internalID: -1384154703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: double page 2_2
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 110
+        width: 789
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6f82fc3a9a8b64a859df5730a00bd5
+      internalID: 511671536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: double page 2_4
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 96
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88db4bfe5486eef438521e12cde5837c
+      internalID: 237570462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: double page 2_5
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 96
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c972233529400354eac0dcecbf4c995b
+      internalID: -1686776365
       vertices: []
       indices: 
       edges: []
@@ -133,7 +217,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5a3e84b90129d8744a0e55891768c251
+    spriteID: 1a1cf5966a6678a49849d1d478b7ebf9
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +225,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      page gauche_0: -964079963
+      double page 2_0: 1384450204
+      double page 2_1: -1384154703
+      double page 2_2: 511671536
+      double page 2_3: -1586158053
+      double page 2_4: 237570462
+      double page 2_5: -1686776365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
