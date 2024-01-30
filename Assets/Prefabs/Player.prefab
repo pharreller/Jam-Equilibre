@@ -149,18 +149,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727ec8dc6476fb9438391624951fc697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 467365847993157435}
-  mouseSmoothTime: 0.1
-  cursorLock: 0
-  mouseSensitivity: 2
-  Speed: 6
-  moveSmoothTime: 0.3
-  gravity: -30
   groundCheck: {fileID: 2990695917450506151}
   ground:
     serializedVersion: 2
     m_Bits: 8
-  jumpHeight: 6
+  playerCamera: {fileID: 467365847993157435}
+  mouseSmoothTime: 0.1
+  mouseSensitivity: 2
+  cameraCapValue: 0
+  Speed: 6
+  moveSmoothTime: 0.3
+  playerCanMove: 1
 --- !u!1 &3778918584179998897
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +228,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 4000
   field of view: 60
   orthographic: 0
   orthographic size: 5
