@@ -14,25 +14,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] [Range(0.1f, 5f)] float mouseSensitivity;
     bool cursorLock = true;
     [Range(0, 90)] public int cameraCapValue;
+    Vector2 currentMouseDelta;
+    Vector2 currentMouseDeltaVelocity;
     
+    float cameraCap;
     [Header("Player Settings")]
     [SerializeField] [Range(0.0f, 20f)] float Speed = 6.0f;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
     float gravity = -30f;
-    
-    
     float velocityY;
     bool isGrounded = true;
-
-    float cameraCap;
-    
-    Vector2 currentMouseDelta;
-    Vector2 currentMouseDeltaVelocity;
-
     CharacterController controller;
     Vector2 currentDir;
     Vector2 currentDirVelocity;
     Vector3 velocity;
+    public bool playerCanMove=true;
 
     void Start()
     {
@@ -46,8 +42,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateMouse();
-        UpdateMove();
+        if (playerCanMove)
+        { 
+            UpdateMouse(); 
+            UpdateMove();
+        }
     }
 
     void UpdateMouse()
@@ -65,7 +64,6 @@ public class PlayerController : MonoBehaviour
 
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
     }
-
     void UpdateMove()
     {
         //isGrounded = Physics.CheckSphere(groundCheck.position, 0.2f, ground); Pas besoin ya pas de saut
@@ -87,4 +85,5 @@ public class PlayerController : MonoBehaviour
             velocityY = -8f;
         }
     }
+    
 }
