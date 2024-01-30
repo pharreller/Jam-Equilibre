@@ -38,7 +38,7 @@ public class Carnet : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                if (rightPageVisible < 7)
+                if (rightPageVisible < 5)
                 {
                     rightPageVisible += 2;
                 }
@@ -73,25 +73,36 @@ public class Carnet : MonoBehaviour
     void TurnPage()
     {
         //Debug.Log(rightPageVisible);
-        if (rightPageVisible == 1)
+        /*if (rightPageVisible == 1)
         {
             attach.enabled = true;
             leftPage.enabled=false;
         }
         else
-        {
-            leftPage.enabled=true;
-            leftPage.sprite = pagesArray[rightPageVisible-1];
-        }
+        {*/
+        leftPage.sprite = pagesArray[rightPageVisible-1]; 
+        Show(leftPage);
+        /*}
         if (rightPageVisible == 7)
         {
             attach.enabled = true;
             rightPage.enabled=false;
         }
         else
+        {*/
+        rightPage.sprite = pagesArray[rightPageVisible];
+        Show(rightPage);
+    }
+
+    void Show(Image page)
+    {
+        if (page.sprite != null)
         {
-            rightPage.enabled=true;
-            rightPage.sprite = pagesArray[rightPageVisible];
+            page.enabled = true; 
+        }
+        else
+        {
+            page.enabled = false; //mettre une page de base
         }
     }
 }
