@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
         audioSources=GetComponents<AudioSource>();
     }
 
-    IEnumerator PlayRandomAudio()
+    public IEnumerator PlayRandomAudio()
     {
         int randIndex = Random.Range(0, audioSources.Length - 1);
         if (previouslyPlayed!=null && randIndex == previouslyPlayed)
