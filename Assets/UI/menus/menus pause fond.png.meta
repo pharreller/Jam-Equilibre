@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 906a81276d7fb0a499fe2ad3df0ed960
+guid: 386996f32fe4cf44aba6d47076bc2640
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,90 +108,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: menu choix fin boutons_5
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 518
-        width: 705
-        height: 427
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8364acfdf329d064cb5886e8f0a451a0
-      internalID: 673051732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: menu choix fin boutons_25
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 91
-        width: 704
-        height: 427
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bad4e062c1534a44ba73e3b613ad13f
-      internalID: -1336145701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fa4de99e214fcea45b7d8a2a6d514d80
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      menu choix fin boutons_0: 1592231293
-      menu choix fin boutons_1: -810189524
-      menu choix fin boutons_10: 2105243245
-      menu choix fin boutons_11: -989956670
-      menu choix fin boutons_12: -882624118
-      menu choix fin boutons_13: 1933769870
-      menu choix fin boutons_14: -1503551749
-      menu choix fin boutons_15: -1382593158
-      menu choix fin boutons_16: -1201304287
-      menu choix fin boutons_17: -1290481497
-      menu choix fin boutons_18: 562690672
-      menu choix fin boutons_19: 1662779542
-      menu choix fin boutons_2: -1202499175
-      menu choix fin boutons_20: -1594016810
-      menu choix fin boutons_21: 1029540208
-      menu choix fin boutons_22: 1676633916
-      menu choix fin boutons_23: -634820269
-      menu choix fin boutons_24: -654733980
-      menu choix fin boutons_25: -1336145701
-      menu choix fin boutons_26: 1547645056
-      menu choix fin boutons_27: -925721072
-      menu choix fin boutons_28: -728436519
-      menu choix fin boutons_29: -1481762859
-      menu choix fin boutons_3: -2052484746
-      menu choix fin boutons_4: -554876039
-      menu choix fin boutons_5: 673051732
-      menu choix fin boutons_6: 895360411
-      menu choix fin boutons_7: -1221439466
-      menu choix fin boutons_8: 1269670145
-      menu choix fin boutons_9: 1671288517
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
