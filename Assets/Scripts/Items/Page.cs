@@ -19,6 +19,7 @@ public class Page : MonoBehaviour
         if (player.CompareTag("Player"))
         {
             carnetScript.pagesArray[pageNb]= GetComponent<SpriteRenderer>().sprite;
+            carnetScript.PageAnim(carnetScript.pagesArray[pageNb]);
             Debug.Log("Page ramassée");
             gameObject.SetActive(false);
         }
