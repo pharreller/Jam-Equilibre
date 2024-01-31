@@ -2337,11 +2337,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8249360087835918749, guid: 1570bcc501970054d8a477ef13951390,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1570bcc501970054d8a477ef13951390, type: 3}
 --- !u!4 &458238130 stripped
 Transform:
@@ -4206,6 +4202,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 900870951}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &902899970 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 780593839443304021, guid: 2d6d395116f4eba41a933520fde4cda2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6989568152077808734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &903176217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4929,11 +4931,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8909611359476609624, guid: 79118b549e1dd844291309b177804bfc,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79118b549e1dd844291309b177804bfc, type: 3}
 --- !u!4 &1049438044 stripped
 Transform:
@@ -8709,6 +8707,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7385509078559901340, guid: dd1cde346c6537d4091813a4dcb51da6,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 902899970}
+    - target: {fileID: 7385509078559901340, guid: dd1cde346c6537d4091813a4dcb51da6,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8420770865052336675, guid: dd1cde346c6537d4091813a4dcb51da6,
         type: 3}
       propertyPath: carnet
@@ -9619,11 +9627,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8344352149631029233, guid: e5e17c021527eec41a4f75aac36d7e5e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5e17c021527eec41a4f75aac36d7e5e, type: 3}
 --- !u!4 &2040383313 stripped
 Transform:
