@@ -16,11 +16,13 @@ public class Carnet : MonoBehaviour
     public bool carnetIsVisible = false;
     private int rightPageVisible = 1;
 
+    public GameObject pageUiprefab;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            ToggleShowCarnet();
+            StartCoroutine(ToggleShowCarnet());
         }
         
         if (carnetIsVisible)
@@ -37,7 +39,7 @@ public class Carnet : MonoBehaviour
                     Debug.Log("No pages before");
                 }
 
-                TurnPage();
+                StartCoroutine(TurnPage());
             }
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
@@ -50,15 +52,17 @@ public class Carnet : MonoBehaviour
                 {
                     Debug.Log("No pages after");
                 }
-                TurnPage();
+                StartCoroutine(TurnPage());
             }
         }
     }
     
-    public void ToggleShowCarnet()
+    public IEnumerator ToggleShowCarnet()
     {
         if (carnetIsVisible)
         {
+            GetComponent<SmoothMove>().FromTo(transform.position, new Vector2(278,-156),0.2f);
+            yield return new WaitForSeconds(0.2f);
             carnetIsVisible = false;
             cover.enabled = false;
             attach.enabled = false;
@@ -69,36 +73,28 @@ public class Carnet : MonoBehaviour
         }
         else
         { 
+            
             carnetIsVisible = true;
             attach.enabled = true;
             cover.enabled = true;
             leftVirgin.enabled = true;
             rightVirgin.enabled = true;
-            TurnPage();
+            StartCoroutine(TurnPage());
+            GetComponent<SmoothMove>().FromTo(transform.position,new Vector2(278,156),0.5f);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 
-    void TurnPage()
+    IEnumerator TurnPage()
     {
-        //Debug.Log(rightPageVisible);
-        /*if (rightPageVisible == 1)
-        {
-            attach.enabled = true;
-            leftPage.enabled=false;
-        }
-        else
-        {*/
-        leftPage.sprite = pagesArray[rightPageVisible-1]; 
-        Show(leftPage);
-        /*}
-        if (rightPageVisible == 7)
-        {
-            attach.enabled = true;
-            rightPage.enabled=false;
-        }
-        else
-        {*/
+        leftPage.sprite = pagesArray[rightPageVisible-1];
         rightPage.sprite = pagesArray[rightPageVisible];
+        leftVirgin.color= new Color(1,1,1,0.95f);
+        rightVirgin.color= new Color(1,1,1,0.95f);
+        yield return new WaitForSeconds(0.1f);
+        leftVirgin.color= new Color(1,1,1,1);
+        rightVirgin.color= new Color(1,1,1,1);
+        Show(leftPage);
         Show(rightPage);
     }
 
@@ -112,5 +108,11 @@ public class Carnet : MonoBehaviour
         {
             page.enabled = false; //mettre une page de base
         }
+    }
+
+    public void PageAnim(Sprite page)
+    {
+        pageUiprefab.GetComponent<Image>().sprite = page;
+        Instantiate(pageUiprefab, transform);
     }
 }
