@@ -3,17 +3,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public PlayerController player;
     public GameObject carnet;
+    public VideoClip introVideo;
+    public VideoClip outroVideo;
+    private VideoPlayer vp;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        StartCoroutine(PlayVideo(introVideo));
+    }
+
+    IEnumerator PlayVideo(VideoClip video)
+    {
+        vp = GetComponent<VideoPlayer>();
+        vp.clip = video;
+        Time.timeScale = 0f;
+        vp.Play();
+        while (vp.frame != (long)vp.frameCount-1)
+        {
+            yield return null;
+        }
+        vp.Stop();
+        Time.timeScale = 1f;
+        if (vp.clip == outroVideo)
+        {
+            BackToMenu();
+            player.playerCanMove = false;
+        }
+        else
+        {
+            // Camera Keanu Reevese
+            player.playerCanMove = true;
+        }
     }
 
     private void Update()
@@ -54,7 +83,6 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        //endgame then credits in the menu
+        StartCoroutine(PlayVideo(outroVideo));
     }
-    
 }
