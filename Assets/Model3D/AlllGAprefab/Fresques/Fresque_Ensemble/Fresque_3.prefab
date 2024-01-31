@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7812515819987964634}
+  - component: {fileID: 904821698546846228}
   m_Layer: 0
   m_Name: Fresque_3
   m_TagString: Untagged
@@ -36,6 +37,27 @@ Transform:
   - {fileID: 186840125730066766}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &904821698546846228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6138817078548053865}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.32, y: 2.73, z: 0.57}
+  m_Center: {x: 1.07, y: 1.45, z: -0.8}
 --- !u!1001 &3466982375849470457
 PrefabInstance:
   m_ObjectHideFlags: 0
