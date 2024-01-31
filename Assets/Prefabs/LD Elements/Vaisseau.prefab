@@ -118,5 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772d392047c4c26418c94b468d1b9b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choiceUI: {fileID: 0}
-  gm: {fileID: 0}
+  choiceUI: {fileID: 7003371062072744212, guid: d3c71312f0bee3247bc608ecddc0168b,
+    type: 3}
+  gm: {fileID: 8420770865052336675, guid: dd1cde346c6537d4091813a4dcb51da6, type: 3}

@@ -156,7 +156,7 @@ MonoBehaviour:
   playerCamera: {fileID: 467365847993157435}
   mouseSmoothTime: 0.1
   mouseSensitivity: 2
-  cameraCapValue: 0
+  cameraCapValue: 45
   Speed: 6
   moveSmoothTime: 0.3
   playerCanMove: 1
