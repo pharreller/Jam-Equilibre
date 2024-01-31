@@ -3049,44 +3049,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1691103549689735467, guid: d3c71312f0bee3247bc608ecddc0168b,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1691103549689735467, guid: d3c71312f0bee3247bc608ecddc0168b,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 508791157}
-    - target: {fileID: 1691103549689735467, guid: d3c71312f0bee3247bc608ecddc0168b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 8420770865052336675, guid: dd1cde346c6537d4091813a4dcb51da6,
-        type: 3}
-    - target: {fileID: 1691103549689735467, guid: d3c71312f0bee3247bc608ecddc0168b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ToggleMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1691103549689735467, guid: d3c71312f0bee3247bc608ecddc0168b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 1883225449}
-    - target: {fileID: 1691103549689735467, guid: d3c71312f0bee3247bc608ecddc0168b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7003371062072744212, guid: d3c71312f0bee3247bc608ecddc0168b,
         type: 3}
       propertyPath: m_Name
       value: Choice menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7003371062072744212, guid: d3c71312f0bee3247bc608ecddc0168b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8094153029314663267, guid: d3c71312f0bee3247bc608ecddc0168b,
         type: 3}
@@ -3306,11 +3275,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pause Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 37570821574818508, guid: 469c1f7f412b5924f946a9d04ff4e54f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 557710353755021363, guid: 469c1f7f412b5924f946a9d04ff4e54f,
         type: 3}
