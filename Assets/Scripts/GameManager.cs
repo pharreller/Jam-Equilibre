@@ -18,18 +18,20 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)&& Time.timeScale == 1f )
         {
-            TogglePauseMenu();
+            ToggleMenu(pauseMenuUI);
         }
     }
 
-    public void TogglePauseMenu()
+    public void ToggleMenu(GameObject ui)
     {
-        ToggleMouse();
+        Cursor.lockState = (ui.activeSelf) ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !Cursor.visible;
+        
         player.playerCanMove = !player.playerCanMove;
-        pauseMenuUI.SetActive(!pauseMenuUI.activeSelf);
-        if (!pauseMenuUI.activeSelf)
+        ui.SetActive(!ui.activeSelf);
+        if (!ui.activeSelf)
         {
             if (carnet.GetComponent<Carnet>().carnetIsVisible)
             {
@@ -42,18 +44,17 @@ public class GameManager : MonoBehaviour
             
             carnet.SetActive(false);
         }
-        Time.timeScale = (pauseMenuUI.activeSelf) ? 0f : 1f;
+        Time.timeScale = (ui.activeSelf) ? 0f : 1f;
     }
 
     public void BackToMenu()
     {
-        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
     }
 
-    void ToggleMouse()
+    public void EndGame()
     {
-        Cursor.lockState = (pauseMenuUI.activeSelf) ? CursorLockMode.Locked : CursorLockMode.None;
-        Cursor.visible = !Cursor.visible;
+        //endgame then credits in the menu
     }
     
 }

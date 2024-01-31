@@ -8,6 +8,8 @@ public class Carnet : MonoBehaviour
 {
     public Image cover;
     public Image attach;
+    public Image leftVirgin;
+    public Image rightVirgin;
     public Image leftPage;
     public Image rightPage;
     public Sprite[] pagesArray;
@@ -28,6 +30,7 @@ public class Carnet : MonoBehaviour
                 if (rightPageVisible > 1)
                 {
                     rightPageVisible -= 2;
+                    GetComponent<AudioManager>().StartCoroutine("PlayRandomAudio");
                 }
                 else
                 {
@@ -41,6 +44,7 @@ public class Carnet : MonoBehaviour
                 if (rightPageVisible < 5)
                 {
                     rightPageVisible += 2;
+                    GetComponent<AudioManager>().StartCoroutine("PlayRandomAudio");
                 }
                 else
                 {
@@ -58,6 +62,8 @@ public class Carnet : MonoBehaviour
             carnetIsVisible = false;
             cover.enabled = false;
             attach.enabled = false;
+            leftVirgin.enabled = false;
+            rightVirgin.enabled = false;
             leftPage.enabled = false;
             rightPage.enabled = false;
         }
@@ -66,6 +72,8 @@ public class Carnet : MonoBehaviour
             carnetIsVisible = true;
             attach.enabled = true;
             cover.enabled = true;
+            leftVirgin.enabled = true;
+            rightVirgin.enabled = true;
             TurnPage();
         }
     }

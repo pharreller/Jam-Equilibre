@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     private AudioSource[] audioSources;
     public float delay;
-    private int previouslyPlayed;
+    private int previouslyPlayed =-1;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
     public IEnumerator PlayRandomAudio()
     {
         int randIndex = Random.Range(0, audioSources.Length - 1);
-        if (previouslyPlayed!=null && randIndex == previouslyPlayed)
+        if (previouslyPlayed!=-1 && randIndex == previouslyPlayed)
         {
             if (audioSources[randIndex-1]!=null)
             {
