@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
@@ -13,16 +14,18 @@ public class GameManager : MonoBehaviour
     public VideoClip introVideo;
     public VideoClip outroVideo;
     private VideoPlayer vp;
+    public Fade black;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        StartCoroutine(PlayVideo(introVideo));
+        StartCoroutine(PlayVideo(introVideo,0f));
     }
 
-    IEnumerator PlayVideo(VideoClip video)
+    IEnumerator PlayVideo(VideoClip video, float delay)
     {
+        yield return new WaitForSeconds(delay);
         vp = GetComponent<VideoPlayer>();
         vp.clip = video;
         Time.timeScale = 0f;
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
             // Camera Keanu Reevese
             player.playerCanMove = true;
         }
+        black.FadeInButton(true);
     }
 
     private void Update()
@@ -83,6 +87,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        StartCoroutine(PlayVideo(outroVideo));
+        black.FadeInButton(false);
+        StartCoroutine(PlayVideo(outroVideo,2f));
     }
 }
