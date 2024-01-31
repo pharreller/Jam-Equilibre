@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7cb9cc0f4da100043824cfa3a09b610c
+guid: b130f8d7fda57264381321b276c0f900
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,10 +113,10 @@ TextureImporter:
       name: double page 1_0
       rect:
         serializedVersion: 2
-        x: 1030
-        y: 113
-        width: 717
-        height: 880
+        x: 0
+        y: 0
+        width: 960
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f86508bc5e00c634489a77c4ccb5720e
-      internalID: -25415762
+      spriteID: 17b67a35185d3bc40b6bf6ef2f406168
+      internalID: -642361858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: double page 1_4
+      name: double page 1_1
       rect:
         serializedVersion: 2
-        x: 222
-        y: 94
-        width: 699
-        height: 876
+        x: 960
+        y: 0
+        width: 960
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f269755dc5cb7d14c957191433feda10
-      internalID: 24313168
+      spriteID: 98a4e86599ef7ed4a9aec89ce0c69b36
+      internalID: 1798216992
       vertices: []
       indices: 
       edges: []
@@ -154,7 +154,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 75f38c5b569c5054d9a4ae3cacb4fbb5
+    spriteID: 3fc6c61ef6331f944aea15013c92420d
     internalID: 0
     vertices: []
     indices: 
@@ -162,17 +162,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      double page 1_0: -25415762
-      double page 1_1: -266268094
-      double page 1_10: -805445290
-      double page 1_2: 719442630
-      double page 1_3: -1251393386
-      double page 1_4: 24313168
-      double page 1_5: -862600323
-      double page 1_6: 476335136
-      double page 1_7: -1945856944
-      double page 1_8: 1405351776
-      double page 1_9: -561376896
+      double page 1_0: -642361858
+      double page 1_1: 1798216992
+      double page 1_2: -1296299521
+      double page 1_3: -1941089044
+      double page 1_4: 32963405
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
