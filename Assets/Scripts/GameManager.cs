@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             if (carnet.GetComponent<Carnet>().carnetIsVisible)
             {
-                carnet.GetComponent<Carnet>().ToggleShowCarnet();
+                carnet.GetComponent<Carnet>().StartCoroutine("ToggleShowCarnet");
             }
             carnet.SetActive(true);
         }
