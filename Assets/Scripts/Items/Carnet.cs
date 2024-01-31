@@ -39,7 +39,7 @@ public class Carnet : MonoBehaviour
                     Debug.Log("No pages before");
                 }
 
-                StartCoroutine(TurnPage());
+                TurnPage();
             }
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
@@ -52,7 +52,7 @@ public class Carnet : MonoBehaviour
                 {
                     Debug.Log("No pages after");
                 }
-                StartCoroutine(TurnPage());
+                TurnPage();
             }
         }
     }
@@ -61,7 +61,7 @@ public class Carnet : MonoBehaviour
     {
         if (carnetIsVisible)
         {
-            GetComponent<SmoothMove>().FromTo(transform.position, new Vector2(278,-156),0.2f);
+            GetComponent<SmoothMove>().FromTo(new Vector2(0,0), new Vector2(0,-1000),0.2f);
             yield return new WaitForSeconds(0.2f);
             carnetIsVisible = false;
             cover.enabled = false;
@@ -79,19 +79,18 @@ public class Carnet : MonoBehaviour
             cover.enabled = true;
             leftVirgin.enabled = true;
             rightVirgin.enabled = true;
-            StartCoroutine(TurnPage());
-            GetComponent<SmoothMove>().FromTo(transform.position,new Vector2(278,156),0.5f);
+            TurnPage();
+            GetComponent<SmoothMove>().FromTo(new Vector2(0,-1000),new Vector2(0,0),0.5f);
             yield return new WaitForSeconds(0.5f);
         }
     }
 
-    IEnumerator TurnPage()
+    void TurnPage()
     {
         leftPage.sprite = pagesArray[rightPageVisible-1];
         rightPage.sprite = pagesArray[rightPageVisible];
         leftVirgin.color= new Color(1,1,1,0.95f);
         rightVirgin.color= new Color(1,1,1,0.95f);
-        yield return new WaitForSeconds(0.1f);
         leftVirgin.color= new Color(1,1,1,1);
         rightVirgin.color= new Color(1,1,1,1);
         Show(leftPage);

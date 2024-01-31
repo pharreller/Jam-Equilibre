@@ -19,7 +19,7 @@ public class SmoothMove : MonoBehaviour
 
             float t = Mathf.Clamp01(elapsedTime / timing);
 
-            transform.position = Vector3.Lerp(xCoords, yCoords, t);
+            transform.localPosition = Vector3.Lerp(xCoords, yCoords, t);
 
             if (t >= 1f)
             {
