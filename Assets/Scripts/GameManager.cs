@@ -15,27 +15,41 @@ public class GameManager : MonoBehaviour
     public VideoClip outroVideo;
     private VideoPlayer vp;
     public Fade black;
+    public GameObject control;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        StartCoroutine(PlayVideo(introVideo,0f));
+        black.FadeInButton(true);
+        StartCoroutine(PlayVideo(introVideo,2f));
     }
 
     IEnumerator PlayVideo(VideoClip video, float delay)
     {
         yield return new WaitForSeconds(delay);
+        black.FadeInButton(false);
+        yield return new WaitForSeconds(delay);
+        control.SetActive(false);
         vp = GetComponent<VideoPlayer>();
         vp.clip = video;
-        Time.timeScale = 0f;
+        
+        
+        //Time.timeScale = 0f;
+        Debug.Log("Debut video");
         vp.Play();
+        black.FadeInButton(true);
+        
         while (vp.frame != (long)vp.frameCount-1)
         {
             yield return null;
         }
+        black.FadeInButton(true);
+        Debug.Log("Fin video");
         vp.Stop();
-        Time.timeScale = 1f;
+        
+        //Time.timeScale = 1f;
+        
         if (vp.clip == outroVideo)
         {
             BackToMenu();
@@ -46,7 +60,6 @@ public class GameManager : MonoBehaviour
             // Camera Keanu Reevese
             player.playerCanMove = true;
         }
-        black.FadeInButton(true);
     }
 
     private void Update()

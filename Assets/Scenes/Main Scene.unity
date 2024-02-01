@@ -1332,6 +1332,7 @@ MonoBehaviour:
   carnet: {fileID: 775288406}
   introVideo: {fileID: 32900000, guid: 65df842c1b4c386429fc0b506b117b5b, type: 3}
   outroVideo: {fileID: 32900000, guid: 0635db3d0006c2f42b4615443d5ad4c3, type: 3}
+  black: {fileID: 0}
 --- !u!328 &508791158
 VideoPlayer:
   m_ObjectHideFlags: 0
