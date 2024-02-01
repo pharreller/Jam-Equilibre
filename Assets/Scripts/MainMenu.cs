@@ -9,8 +9,12 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public Fade black;
-    
-    
+
+    public void Start()
+    {
+        black.FadeInButton(true);
+    }
+
     public IEnumerator Intro()
     {
         black.FadeInButton(false);
