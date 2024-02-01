@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-8119824103801831152
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: + - Copy
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: e7a41d252141f7440965dd544cc3093b
+  m_Children: []
+  m_Volume: ad2cb08a8ebfd3f40853432137c2172a
+  m_Pitch: e6179a59eee7d804ca489b7efdcbbfb8
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 883662393403478281}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-7018843448282203234
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -34,6 +53,7 @@ AudioMixerController:
   - guids:
     - 1f0673d289208ce40b795edd8c03af14
     - 6e1f7e6bcb539da4d861e6e1dbc8fc9d
+    - e7a41d252141f7440965dd544cc3093b
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -48,6 +68,7 @@ AudioMixerGroupController:
   m_GroupID: 1f0673d289208ce40b795edd8c03af14
   m_Children:
   - {fileID: 1491815858614402011}
+  - {fileID: -8119824103801831152}
   m_Volume: a58040b5ea70cd64790bac9eae1ab977
   m_Pitch: b35ffe7be04f58b47b90df62e264b22b
   m_Send: 00000000000000000000000000000000
@@ -80,8 +101,23 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: fc12b13ffab15b44cacac5275b319ffa
-  m_FloatValues: {}
+  m_FloatValues:
+    ad2cb08a8ebfd3f40853432137c2172a: 5
   m_TransitionOverrides: {}
+--- !u!244 &883662393403478281
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Attenuation
+  m_EffectID: 13d87dece15faab4bb15992770f9bcae
+  m_EffectName: Attenuation
+  m_MixLevel: 275a61106b9279f4993caca1d8a6d652
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &1491815858614402011
 AudioMixerGroupController:
   m_ObjectHideFlags: 0

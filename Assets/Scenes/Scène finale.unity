@@ -6807,13 +6807,19 @@ PrefabInstance:
     - target: {fileID: 5241450755420757258, guid: 8fa96f741aa7511468f3a3d0c8eb7566,
         type: 3}
       propertyPath: MaxDistance
-      value: 44.687744
+      value: 68.66564
       objectReference: {fileID: 0}
     - target: {fileID: 5241450755420757258, guid: 8fa96f741aa7511468f3a3d0c8eb7566,
         type: 3}
       propertyPath: MinDistance
-      value: 23.730534
+      value: 36.902664
       objectReference: {fileID: 0}
+    - target: {fileID: 5241450755420757258, guid: 8fa96f741aa7511468f3a3d0c8eb7566,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -8119824103801831152, guid: 19d79864260e47f43a418364f522d858,
+        type: 2}
     - target: {fileID: 6030271985404791471, guid: 8fa96f741aa7511468f3a3d0c8eb7566,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6949,6 +6955,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Zone de fin habill\xE9"
       objectReference: {fileID: 0}
+    - target: {fileID: 7255194099861978696, guid: 8fa96f741aa7511468f3a3d0c8eb7566,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1886212244}
+    - target: {fileID: 7255194099861978696, guid: 8fa96f741aa7511468f3a3d0c8eb7566,
+        type: 3}
+      propertyPath: choiceUI
+      value: 
+      objectReference: {fileID: 2096472819}
     - target: {fileID: 7294376799590228453, guid: 8fa96f741aa7511468f3a3d0c8eb7566,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10330,6 +10346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -48.424
+      objectReference: {fileID: 0}
+    - target: {fileID: 8972287572171678436, guid: 0276136506a90cb41aceca9819e3a00e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18737,6 +18758,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6737018d85c292e40b8beacdf0143656,
     type: 3}
   m_PrefabInstance: {fileID: 2076501782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2096472819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8627102879425803653, guid: 14d404f61c428254a880dea844b30f4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946246678}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2114953678
 GameObject:
