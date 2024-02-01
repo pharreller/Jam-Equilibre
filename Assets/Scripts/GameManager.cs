@@ -27,7 +27,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayVideo(VideoClip video, float delay)
     {
-        yield return new WaitForSeconds(delay);
+        player.playerCanMove = false;
+        yield return new WaitForSeconds(delay*3);
         black.FadeInButton(false);
         yield return new WaitForSeconds(delay);
         control.SetActive(false);
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
         //Time.timeScale = 0f;
         Debug.Log("Debut video");
         vp.Play();
+        yield return new WaitForSeconds(0.5f);
         black.FadeInButton(true);
         
         while (vp.frame != (long)vp.frameCount-1)

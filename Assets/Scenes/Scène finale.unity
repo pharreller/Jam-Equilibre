@@ -21517,6 +21517,11 @@ PrefabInstance:
       objectReference: {fileID: 6989568152077808735}
     - target: {fileID: 8420770865052336675, guid: dd1cde346c6537d4091813a4dcb51da6,
         type: 3}
+      propertyPath: control
+      value: 
+      objectReference: {fileID: 1946246682}
+    - target: {fileID: 8420770865052336675, guid: dd1cde346c6537d4091813a4dcb51da6,
+        type: 3}
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1946246680}
@@ -22064,6 +22069,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97509db047bf984bb1069a223d9728d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1946246682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5393194248071286844, guid: 14d404f61c428254a880dea844b30f4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946246678}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1947173069
 PrefabInstance:
   m_ObjectHideFlags: 0
