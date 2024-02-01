@@ -13,8 +13,10 @@ public class MainMenu : MonoBehaviour
     public void Start()
     {
         black.FadeInButton(true);
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
     }
-
+	
     public IEnumerator Intro()
     {
         black.FadeInButton(false);

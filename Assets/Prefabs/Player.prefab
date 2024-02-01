@@ -154,7 +154,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   playerCamera: {fileID: 467365847993157435}
-  mouseSmoothTime: 0.1
+  mouseSmoothTime: 0
   mouseSensitivity: 2
   cameraCapValue: 25
   Speed: 6

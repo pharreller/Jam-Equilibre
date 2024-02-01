@@ -27,11 +27,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayVideo(VideoClip video, float delay)
     {
-        player.playerCanMove = false;
-        yield return new WaitForSeconds(delay*3);
-        black.FadeInButton(false);
-        yield return new WaitForSeconds(delay);
-        control.SetActive(false);
+        
+		if(!player.playerCanMove){
+			yield return new WaitForSeconds(delay*3);
+			black.FadeInButton(false);
+			yield return new WaitForSeconds(delay);
+			control.SetActive(false);}
         vp = GetComponent<VideoPlayer>();
         vp.clip = video;
         
@@ -103,6 +104,6 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         black.FadeInButton(false);
-        StartCoroutine(PlayVideo(outroVideo,2f));
+        StartCoroutine(PlayVideo(outroVideo,0));
     }
 }
