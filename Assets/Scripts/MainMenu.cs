@@ -8,11 +8,20 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public void LaunchGame()
+    public Fade black;
+    
+    
+    public IEnumerator Intro()
     {
+        black.FadeInButton(false);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(1);
     }
 
+    public void LaunchGame()
+    {
+        StartCoroutine(Intro());
+    }
     public void ExitGame()
     {
         Application.Quit();
