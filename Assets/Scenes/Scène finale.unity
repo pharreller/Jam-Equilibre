@@ -2865,29 +2865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MeshFormatVersion: 0
-  m_Faces: []
-  m_SharedVertices: []
-  m_SharedTextures: []
-  m_Positions: []
-  m_Textures0: []
-  m_Textures2: []
-  m_Textures3: []
-  m_Tangents: []
-  m_Colors: []
-  m_UnwrapParameters:
-    m_HardAngle: 88
-    m_PackMargin: 20
-    m_AngleError: 8
-    m_AreaError: 15
-  m_PreserveMeshAssetOnDestroy: 0
-  assetGuid: 
-  m_Mesh: {fileID: 0}
-  m_VersionIndex: 0
-  m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
 --- !u!23 &349588301
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2942,22 +2919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca002da428252441b92f28d83c8a65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Shape:
-    rid: 152012603016609792
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Rotation: {x: 0, y: 0, z: 0, w: 1}
-  m_PivotLocation: 0
-  m_PivotPosition: {x: 0, y: 0, z: 0}
-  m_UnmodifiedMeshVersion: 0
-  m_ShapeBox:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  references:
-    version: 2
-    RefIds:
-    - rid: 152012603016609792
-      type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!4 &349588303
 Transform:
   m_ObjectHideFlags: 0
@@ -5636,7 +5597,7 @@ PrefabInstance:
     - target: {fileID: 8308970171211402492, guid: 83863ea4538a4e74d99c8543a2600b4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 69.36
+      value: 68.915
       objectReference: {fileID: 0}
     - target: {fileID: 8308970171211402492, guid: 83863ea4538a4e74d99c8543a2600b4f,
         type: 3}
@@ -10167,7 +10128,7 @@ PrefabInstance:
     - target: {fileID: 7430729287116969249, guid: c530de090d3dd0047a8a185fcea5051c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.645
+      value: -2.078
       objectReference: {fileID: 0}
     - target: {fileID: 7430729287116969249, guid: c530de090d3dd0047a8a185fcea5051c,
         type: 3}
@@ -10717,7 +10678,7 @@ PrefabInstance:
     - target: {fileID: 7430729287116969249, guid: 82ae3403b93684a46a3c1f2358a65ee5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.64
+      value: -2.023
       objectReference: {fileID: 0}
     - target: {fileID: 7430729287116969249, guid: 82ae3403b93684a46a3c1f2358a65ee5,
         type: 3}
@@ -20858,7 +20819,7 @@ PrefabInstance:
     - target: {fileID: 3079606157039164829, guid: 85631a2c9a9bf344b854e0591f01b7c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 3079606157039164829, guid: 85631a2c9a9bf344b854e0591f01b7c3,
         type: 3}
@@ -21914,6 +21875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379504913191749053, guid: 14d404f61c428254a880dea844b30f4a,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7412201472769130482, guid: 14d404f61c428254a880dea844b30f4a,
         type: 3}
